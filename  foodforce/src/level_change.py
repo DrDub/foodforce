@@ -50,7 +50,7 @@ class change_level:
         self.data_file=data_file
         self.graphics_file=graphics_file
         self.run=True
-        level_updater=threading.Thread(target=self.level_reinit,args=[]).start()
+        level_updater=threading.Thread(target=self.level_reinit(),args=[]).start()
         
         pygame.display.set_caption('FoodForce2')
         threades.screen.fill((0,0,0))
@@ -91,7 +91,7 @@ class change_level:
         
     def level_reinit(self):
         
-
+       
         #emptying all the groups present in threads.py
         model.house_sprite_list = []
         model.hospital_sprite_list = []

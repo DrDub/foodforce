@@ -49,10 +49,10 @@ Facility_Size = [['HOUSE',360,360],['HOSPITAL',370,300],['FARM',516,500],['FOUNT
 #Facility_Size = [['HOUSE',360],['HOSPITAL',370],['FARM',516],['FOUNTAIN',197],['SCHOOL',420],['WORKSHOP',600]]
 storyboard_file = ''
 
-def init_cons(file_name):
+def init_cons(file_name ):
     """ used to read the values of constant from data file file_name
     @ivar file_name data file containing values of constant
-    @type file_name string
+    @type file_name string 
     """
     data_file = open(file_name,'rb')
     # DICTIONARIES REGARDING RESOURCES REQD TO BUILD EACH FACILITY PER BUILDING
